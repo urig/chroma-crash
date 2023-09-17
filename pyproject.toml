@@ -8,6 +8,8 @@ packages = [{include = "chroma_crash"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+flask = "^2.3.3"
+chromadb = "0.4.8"
 
 
 [build-system]
