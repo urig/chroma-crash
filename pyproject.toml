@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "chroma-crash"
+version = "0.1.0"
+description = ""
+authors = ["urig <urig@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "chroma_crash"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
