@@ -1,12 +1,21 @@
 import logging
+import google.cloud.logging
 from flask import Flask
 
+logging.basicConfig()
+try:
+    client = google.cloud.logging.Client()
+    client.setup_logging()
+except:
+    pass
+
 app = Flask(__name__)
+
+logging.info("app loaded successfully")
 
 
 @app.route("/")
 def hello_world():
-    logging.basicConfig()
     try:
         import chromadb
     except Exception as ex:
